@@ -1,15 +1,22 @@
 # Project Proposal
 
 ## Project Description:
-  Open source project description (What is it?, Contributors, Activity, Use, platform, documentation sources, etc.) 
-### Popularity
+  Open source project description (What is it?, Contributors, Activity, Use, platform,) 
+  Graylog is an open source log management platform. 
+  
+#### Contributors
+ * 67
+ 
+#### Popularity
  * Watchers - 222
  * Stars - 3,592
  * Forks - 537
-### Language Used
-  * Java
  
-
+#### Documentation Sources
+Github Repository Link: https://github.com/Graylog2/graylog2-server
+GrayLog's Official Website: https://www.graylog.org/
+Graylog's Documentation Page: https://www.graylog.org/
+ 
 ## What about the License of Graylog?
 
   Graylog is released under the version 3.0 of the GNU GPL General Public License. This license which affords end users the freedom to “run, study, share and modify the software” for free. All copyright and license are required to be preserved.
