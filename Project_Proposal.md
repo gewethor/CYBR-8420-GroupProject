@@ -4,7 +4,7 @@
   Graylog is an open source log management platform capable of handing a wide variety of log management-based tasks. Graylog is able to collect and process logs, wire data, and event data from any source. It is capable of allowing users to search through and analyze log data in a web interface designed for users. Trigger actions can be set using the web interface for users to be alerted for security issues or performance degradations. 
   
 #### System Architecture
-  Graylog is reliant on three main components: Graylog, MongoDB, and ElasticSearch.
+  Graylog is comprised of three main components: Graylog, MongoDB, and ElasticSearch.
   * **ElasticSearch** is utilized for log management and provides full-text searching capabilities.
   * **MongoDB** is utilized for storing meta information and configuration data.
   * **Graylog**, as discussed above, provides log management solutions. Graylog's servers act as log parsers, processes messages, and communicates with non-server components. The web interface provides the user interface for analyzing and managing the logs.
