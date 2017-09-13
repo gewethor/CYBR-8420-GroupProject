@@ -1,21 +1,30 @@
 # Project Proposal
 
 ## Project Description:
-  Open source project description (What is it?, Contributors, Activity, Use, platform,) 
-  Graylog is an open source log management platform. 
+  Graylog is an open source log management platform based on Elasticsearch, Java, and MongoDB. 
   
-#### Contributors
- * 67
+  
+  While about 80% of the project is java based, the following is a breakdown of the additional languages used within the Graylog platform.
+  
+  * Javascript - 15%
+  * XML - 1.5%
+  * CSS - 1.3%
+  * Ruby - 0.6%
+  * shell script - 0.2%
+  * PHP - 0.2%
+  * HTML - 0.1%
+  
+ To date, Graylog has 18,025 commits, which date back to May of 2010, made by 107 contributors. Graylog's commit history peaked in May of 2015 with 1,007 total commits that month. However, it's 30 day commit history average is very low given it's once highly active history. Within the last 12 months, Graylog has seen 546 commits and only 14 in the last 30 days. While the number of commits is quite low, Graylog contributors continue to appear very active. Github issues appear to be responded to within a very short period of time (the most recent issue to date was responded to by a contributor within the same hour).
  
-#### Popularity
+#### Popularity (graylog2-server repository)
  * Watchers - 222
  * Stars - 3,592
  * Forks - 537
  
 #### Documentation Sources
-Github Repository Link: https://github.com/Graylog2/graylog2-server
-GrayLog's Official Website: https://www.graylog.org/
-Graylog's Documentation Page: https://www.graylog.org/
+ * Github Repository Link: https://github.com/Graylog2/graylog2-server 
+ * GrayLog's Official Website: https://www.graylog.org/
+ * Graylog's Documentation Page: https://www.graylog.org/
  
 ## What about the License of Graylog?
 
