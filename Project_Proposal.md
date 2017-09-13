@@ -18,8 +18,8 @@
 Graylog centralizes the storage of log information from many different sources such as servers, network devices and software applications.  Security is a key aspect to the implementation of a log management system.  Log files can contain information regarding system errors or possible intrusions.  Organizations must be able to trust that the information contained in the system is accurate and remains unmodified.
 
 1.	User Accounts / Authentication
-•	The system shall require users to have a unique username and require that user to login using an authentication provider such as passwords managed by the system or LDAP/Active Directory. 
-•	Open user sessions shall expire after a specific period of inactivity.
+*The system shall require users to have a unique username and require that user to login using an authentication provider such as passwords managed by the system or LDAP/Active Directory. 
+*Open user sessions shall expire after a specific period of inactivity.
 
 2.	User Authorization
 •	The system shall require users to be assigned one or more roles that will define what level of permissions they should have.
