@@ -1,12 +1,18 @@
 # Project Proposal
 
 ## Project Description of Graylog:
-  Graylog is an open source log management platform based on Elasticsearch, Java, and MongoDB. 
+  Graylog is an open source log management platform capable of handing a wide variety of log management-based tasks. Graylog is able to collect and process logs, wire data, and event data from any source. It is capable of allowing users to search through and analyze log data in a web interface designed for users. Trigger actions can be set using the web interface for users to be alerted for security issues or performance degradations. 
+  
+#### System Architecture
+  Graylog is reliant on three main components: Graylog, MongoDB, and ElasticSearch.
+  * **ElasticSearch** is utilized for log management and provides full-text searching capabilities.
+  * **MongoDB** is utilized for storing meta information and configuration data.
+  * **Graylog**, as discussed above, provides log management solutions. Graylog's servers act as log parsers, processes messages, and communicates with non-server components. The web interface provides the user interface for analyzing and managing the logs.
   
   ![Graylog Architecture](http://docs.graylog.org/en/2.3/_images/architec_small_setup.png)
  
-  
-  While about 80% of the project is java based, the following is a breakdown of the additional languages used within the Graylog platform.
+#### Languages 
+ While about 80% of the project is java based, the following is a breakdown of the additional languages used within the Graylog platform.
   
   * Javascript - 15%
   * XML - 1.5%
@@ -16,12 +22,14 @@
   * PHP - 0.2%
   * HTML - 0.1%
   
+#### Activity 
  To date, Graylog has 18,025 commits, which date back to May of 2010, made by 107 contributors. Graylog's commit history peaked in May of 2015 with 1,007 total commits that month. However, it's 30 day commit history average is very low given it's once highly active history. Within the last 12 months, Graylog has seen 546 commits and only 14 in the last 30 days. While the number of commits is quite low, Graylog contributors continue to appear very active. Github issues appear to be responded to within a very short period of time (the most recent issue to date was responded to by a contributor within the same hour).
  
 #### Popularity (graylog2-server repository)
  * Watchers - 222
  * Stars - 3,592
  * Forks - 537
+ * Active Installations - 25,000
  
 #### Documentation Sources
  * Github Repository Link: https://github.com/Graylog2/graylog2-server 
