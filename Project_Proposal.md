@@ -22,20 +22,20 @@ Graylog centralizes the storage of log information from many different sources s
 * Open user sessions shall expire after a specific period of inactivity.
 
 2.	User Authorization
-•	The system shall require users to be assigned one or more roles that will define what level of permissions they should have.
-o	Administrative users will be allowed to modify system configurations.
-o	Users will be allowed to view log information.
-•	The system shall allow the creation of customized roles that will allow more granular levels of system access.
+* The system shall require users to be assigned one or more roles that will define what level of permissions they should have.
+  * Administrative users will be allowed to modify system configurations.
+  * Users will be allowed to view log information.
+* The system shall allow the creation of customized roles that will allow more granular levels of system access.
 
 3.	Audit Log
-•	The system shall maintain an audit log of all configuration changes made by users.
-•	The audit log shall be secured to prevent unauthorized modifications.
+* The system shall maintain an audit log of all configuration changes made by users.
+* The audit log shall be secured to prevent unauthorized modifications.
 
 4.	Encryption of Data at Rest
-•	The system shall ensure that all log data is encrypted to prevent unauthorized access and modifications.
+* The system shall ensure that all log data is encrypted to prevent unauthorized access and modifications.
 
 5.	REST API
-•	The system shall ensure that all calls to the Graylog REST API can only be made with a valid access token. 
+* The system shall ensure that all calls to the Graylog REST API can only be made with a valid access token. 
 
 
 **What was Ghostbusters motivation for choosing Graylog?**
