@@ -2,7 +2,7 @@
 
 ## Project Description of Graylog:
   Graylog is an open source log management platform based on Elasticsearch, Java, and MongoDB. 
-  
+ 
   
   While about 80% of the project is java based, the following is a breakdown of the additional languages used within the Graylog platform.
   
