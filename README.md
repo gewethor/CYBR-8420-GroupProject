@@ -1,10 +1,3 @@
 # CYBR-8420-GroupProject
 
-will was here
-
-
-Joe Was here
-
-Fadila edit here
-
-Feeling left out...Gabi was also here :)
+This repository contains the Ghost Buster's group project deliverables for the course CYBR-8420 at the University of Nebraska at Omaha.
