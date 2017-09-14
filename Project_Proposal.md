@@ -49,7 +49,7 @@
 ## Security Related History:
   Grayog2 to its latest and most current version 2.2.3 has no exploitable vulnerabilities.
 Before version 9.2, one vulnerability of Medium severity was found on GrayLog2. This vulnerability is named CVE-2014-9217 and allows remote attackers to bypass LDAP authentication via crafted wildcards. CVE-2014-9217 was discovered back on Dec 08, 2014 and has been solved on Graylog2 version 9.2. According to National Vulnerability Database, this vulnerability is Network exploitable, was of a low complexity.
-There are not been any known or exploitable vulnerabilities since the CVE-2014-9217
+There are not been any known or exploitable vulnerabilities since the CVE-2014-9217 vulnerability.
 
 ## Functional Security Requirements for Graylog:
 
