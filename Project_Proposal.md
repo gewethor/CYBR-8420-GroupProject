@@ -47,9 +47,7 @@
   For documentation contributions, you are to edit the documentation in the Graylog2 documentation repo and initiate a pull request. To make contributions to the code to add new features, its is identified in their contributor’s guide that the individual should first discuss the idea with the core team. Once this idea is approved, the user should develop this code then file a pull request. This pull request will then be reviewed by the core team before merging code into the project. Additionally, if a issue is identified, they must be reported on the project’s Graylog Server GitHub repo using the issue tracker. It is also highly encurged by the team to attempt to fix reported issues and file a pull request for code to be merged.
 
 ## Security Related History:
-  Grayog2 to its latest and most current version 2.2.3 has no exploitable vulnerabilities.
-Before version 9.2, one vulnerability of Medium severity was found on GrayLog2. This vulnerability is named CVE-2014-9217 and allows remote attackers to bypass LDAP authentication via crafted wildcards. CVE-2014-9217 was discovered back on Dec 08, 2014 and has been solved on Graylog2 version 9.2. According to National Vulnerability Database, this vulnerability is Network exploitable, was of a low complexity.
-There are not been any known or exploitable vulnerabilities since the CVE-2014-9217 vulnerability.
+  Grayog to its latest and most current version 2.2.3 has no exploitable vulnerabilities.Before version 9.2, one vulnerability of Medium severity was found on GrayLog. The name of the vulnerability was CVE-2014-9217 and only affected versions 0.91, 0.91.3. It allows remote attackers to bypass LDAP authentication via crafted wildcards. CVE-2014-9217 was discovered back on Dec 08, 2014 and has been solved on Graylog2 version 9.2. According to National Vulnerability Database, this vulnerability is network exploitable, was of a low complexity. There are not been any known or exploitable vulnerabilities since the CVE-2014-9217 vulnerability.
 
 ## Functional Security Requirements for Graylog:
 
