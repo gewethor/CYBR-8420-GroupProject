@@ -2,11 +2,11 @@
 
 ### Graylog Assurance Claims
 
-*list of assurance claims here
+*list of assurance claims here*
 
 ### Graylog Security Requirements
 
-*bulleted list here
+*bulleted list here*
 
 ### Graylog Mis-use Case Diagram
 
