@@ -29,7 +29,8 @@ https://www.lucidchart.com/documents/view/71d26345-1d5c-4b22-b79e-03bc3ab060d5/0
   
 #### Alignment of Security Requirements with Graylog's Advertised Features
 
-Graylog 
+Log managment applications such as Graylog, require that they remain secure in order to prevent the hiding of malicious activities.  Graylog has serveral features in place to address security requirements needed to make it a trustworthy system.
+1. The 
 
 
 
