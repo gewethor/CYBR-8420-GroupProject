@@ -4,9 +4,11 @@
 
 *list of assurance claims here*
 
+
 ### Graylog Security Requirements
 
 *bulleted list here*
+
 
 ### Graylog Mis-use Case Diagram
 
