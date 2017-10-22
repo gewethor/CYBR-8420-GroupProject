@@ -34,9 +34,31 @@ Log managment applications such as Graylog, require that they remain secure in o
 
 1. Starting with Graylog 2.1.0, the system allows for the system administrator to select either an internal user database or pluggable authentication providers.  The pluggins allow for providers such as LDAP and Single Sign-On. http://docs.graylog.org/en/2.3/pages/users_and_roles.html#authentication-providers
 
-2. Graylog allows the system administrator to configure a 
+2. The Graylog documentation does not provide any information reguarding input sanitization.
 
+3. 
 
+4.
+
+5. Graylog allows the system administrator to configure a session inactivity timeout period.  http://docs.graylog.org/en/2.3/pages/users_and_roles/users.html#sessions
+
+6.
+
+7.
+
+8.
+
+9.
+
+10.
+
+11.
+
+12.
+
+13.
+
+14.
 
 http://docs.graylog.org/en/latest/pages/users_and_roles/users.html
 
