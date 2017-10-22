@@ -34,6 +34,17 @@ Log managment applications such as Graylog, require that they remain secure in o
 
 
 
+http://docs.graylog.org/en/latest/pages/users_and_roles/users.html
+
+http://docs.graylog.org/en/2.3/pages/users_and_roles/roles.html
+
+http://docs.graylog.org/en/latest/pages/configuration/https.html
+
+http://docs.graylog.org/en/2.3/pages/configuration/rest_api.html
+
+https://discuss.elastic.co/t/how-should-i-encrypt-data-at-rest-with-elasticsearch/96
+
+
 #### Graylog Installation and Configuration Security Issues  
   
 
