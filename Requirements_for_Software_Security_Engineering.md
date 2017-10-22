@@ -30,25 +30,25 @@ https://www.lucidchart.com/documents/view/71d26345-1d5c-4b22-b79e-03bc3ab060d5/0
   
 #### Alignment of Security Requirements with Graylog's Advertised Features
 
-Log managment applications such as Graylog, require that they remain secure in order to prevent the hiding of malicious activities.  Graylog has serveral features in place to address security requirements needed to make it a trustworthy system.
+Log management applications such as Graylog, require that they remain secure in order to prevent the hiding of malicious activities.  Graylog has several features in place to address security requirements needed to make it a trustworthy system.
 
-* Starting with Graylog 2.1.0, the system allows for the system administrator to select either an internal user database or pluggable authentication providers.  The pluggins allow for providers such as LDAP and Single Sign-On.  http://docs.graylog.org/en/2.3/pages/users_and_roles.html#authentication-providers
+* Starting with Graylog 2.1.0, the system allows for the system administrator to select either an internal user database or pluggable authentication providers.  The plugins allow for providers such as LDAP and Single Sign-On.  http://docs.graylog.org/en/2.3/pages/users_and_roles.html#authentication-providers
 
-* The Graylog documentation does not provide any information reguarding input sanitization.
+* The Graylog documentation does not provide any information regarding input sanitization.
 
-* MORE HERE   
+* The Graylog documentation does not provide any information regarding account lockouts after failed logon attempts.  
 
 * Unauthorized access to log data is also provided with the use of roles.  Graylog provides for two default roles (Admin and Reader) that users can be assigned to.  System administrators can also create additional roles to provide customized user access. http://docs.graylog.org/en/2.3/pages/users_and_roles/roles.html# 
 
 * Graylog allows the system administrator to configure a session inactivity timeout period.  http://docs.graylog.org/en/2.3/pages/users_and_roles/users.html#sessions
 
-* Both the Graylog REST API and the web-based dashboard application can be configured to require the use of HTTPS to encyrpt network communications.  http://docs.graylog.org/en/latest/pages/configuration/https.html
+* Both the Graylog REST API and the web-based dashboard application can be configured to require the use of HTTPS to encrypt network communications.  http://docs.graylog.org/en/latest/pages/configuration/https.html
 
 * Log files stored on the server should be encrypted to prevent access outside of the application.  Graylog is not directly responsible for encrypting this data.  System administrators need to make use of a third party tool such as dm-crypt to encrypt the Elasticsearch data.  https://discuss.elastic.co/t/how-should-i-encrypt-data-at-rest-with-elasticsearch/96
 
 * The Graylog Audit Log plugin records all changes made by users into the system's database.  The application allows administrators to view events and filter on specific types of events. http://docs.graylog.org/en/2.3/pages/auditlog.html
 
-* The Graylog REST API makes use of tokens provide user access.  Access tokens can be created to provide permenant access to the system.  Session tokens can be created to provide temporary access.  Session token expiration is defined in that user's profile.  Tokens may be deleted with a call to the REST API.  http://docs.graylog.org/en/2.3/pages/configuration/rest_api.html      
+* The Graylog REST API makes use of tokens provide user access.  Access tokens can be created to provide permenant access to the system.  Session tokens can be created to provide temporary access.  Session token expiration is defined in that user's profile.  Tokens may be revoked with a call to the REST API.  http://docs.graylog.org/en/2.3/pages/configuration/rest_api.html      
 
 
 #### Graylog Installation and Configuration Security Issues  
