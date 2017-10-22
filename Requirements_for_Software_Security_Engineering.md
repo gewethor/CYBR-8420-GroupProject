@@ -31,7 +31,10 @@ https://www.lucidchart.com/documents/view/71d26345-1d5c-4b22-b79e-03bc3ab060d5/0
 #### Alignment of Security Requirements with Graylog's Advertised Features
 
 Log managment applications such as Graylog, require that they remain secure in order to prevent the hiding of malicious activities.  Graylog has serveral features in place to address security requirements needed to make it a trustworthy system.
-1. Graylog
+
+1. Starting with Graylog 2.1.0, the system allows for the system administrator to select either an internal user database or pluggable authentication providers.  The pluggins provide support for providers such as LDAP and Single Sign-On. http://docs.graylog.org/en/2.3/pages/users_and_roles.html#authentication-providers
+
+2. Graylog allows the system administrator to configure a 
 
 
 
