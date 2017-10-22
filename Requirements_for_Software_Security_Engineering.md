@@ -46,11 +46,11 @@ Log managment applications such as Graylog, require that they remain secure in o
 
 * Log files stored on the server should be encrypted to prevent access outside of the application.  Graylog is not directly responsible for encrypting this data.  System administrators need to make use of a third party tool such as dm-crypt to encrypt the Elasticsearch data.  https://discuss.elastic.co/t/how-should-i-encrypt-data-at-rest-with-elasticsearch/96
 
-* The Graylog Audit Log plugin records all changes made by users into the system's database.  The 
+* The Graylog Audit Log plugin records all changes made by users into the system's database.  The application allows administrators to view events and filter on specific types of events. http://docs.graylog.org/en/2.3/pages/auditlog.html
 
 * The Graylog REST API makes use of tokens provide user access.  Access tokens can be created to provide permenant access to the system.  Session tokens can be created to provide temporary access.  Session token expiration is defined in that user's profile.  Tokens may be deleted with a call to the REST API.  http://docs.graylog.org/en/2.3/pages/configuration/rest_api.html      
 
 
 #### Graylog Installation and Configuration Security Issues  
   
-
+*MORE HERE*
