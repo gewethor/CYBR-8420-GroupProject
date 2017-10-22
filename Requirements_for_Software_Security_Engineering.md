@@ -50,12 +50,6 @@ Log managment applications such as Graylog, require that they remain secure in o
 
 9. The Graylog REST API makes use of tokens provide user access.  Access tokens can be created to provide permenant access to the system.  Session tokens can be created to provide temporary access.  Session token expiration is defined in that user's profile.  Tokens may be deleted with a call to the REST API.  http://docs.graylog.org/en/2.3/pages/configuration/rest_api.html      
 
-10. 
-
-
-
-
-
 
 #### Graylog Installation and Configuration Security Issues  
   
