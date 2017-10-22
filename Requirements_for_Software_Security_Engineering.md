@@ -10,7 +10,7 @@
 * The Graylog dashboard shall require that users be authenticated by an authentication provider prior to gaining access to the system.
 * The Graylog dashboard shall prevent malicous input from being used on the logon page in order to gain unathorized access.
 * The Graylog dashboard shall prevent the use of brute force password attacks to gain unathorized access.
-* The Graylog dashboard shall prevent unauthorized access to log data.
+* The Graylog dashboard shall prevent unauthorized access to lo g data.
 * The Graylog dashboard shall reduce the likelihood of an unauthorized user accessing the system from an unlocked workstation.
 * The Graylog dashboard shall prevent network eavesdropping to obtain user credentials.
 * Graylog shall ensure that log files can not be accessed directly outside of the dashboard or through API calls. 
@@ -36,9 +36,9 @@ Log managment applications such as Graylog, require that they remain secure in o
 
 2. The Graylog documentation does not provide any information reguarding input sanitization.
 
-3. 
+3.  
 
-4.
+4. Unauthorized access to log data is also provided with the use of roles.  Graylog provides for two default roles (Admin and Reader) that users can be assigned to.  System administrators can also create additional roles to provide customized user access. http://docs.graylog.org/en/2.3/pages/users_and_roles/roles.html# 
 
 5. Graylog allows the system administrator to configure a session inactivity timeout period.  http://docs.graylog.org/en/2.3/pages/users_and_roles/users.html#sessions
 
