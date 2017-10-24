@@ -53,4 +53,17 @@ Log management applications such as Graylog, require that they remain secure in 
 
 #### Graylog Installation and Configuration Security Issues  
   
-*MORE HERE*
+* When installing via the OVA virtualized appliance, which is not for operational use:
+
+* The default password is ubuntu/ubuntu for the appliance and must be changed
+
+* The default password for the web interface is admin/admin and must be changed
+
+* Must disable remote password logins in /etc/ssh/sshd_config and deploy proper ssh keys
+
+* Separate the box network-wise from the outside, otherwise Elasticsearch and MongoDB can be reached by anyone
+
+* Add additional RAM to the appliance and raise the java heap!
+
+* With graylog-ctl local-connect only the web interface is reachable from the outside.
+
