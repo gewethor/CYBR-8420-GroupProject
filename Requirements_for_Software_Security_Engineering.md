@@ -103,7 +103,7 @@ There are several documented methods available to install Graylog server in a pr
 
 ##### Graylog warns that the Graylog Open Virtual Appliance (OVA) is not recommended for operational environments without significant modification to the security posture. 
 
-* The following are recommendations and precautions provided by Graylog’s documented installation instruction.
+* The following are recommendations and precautions provided by Graylog’s documented installation instruction:
 
   * Change the Graylog OVA password from the default password of ubuntu/ubuntu.
  
@@ -119,7 +119,7 @@ There are several documented methods available to install Graylog server in a pr
 
 ##### Graylog documented installation instructions of Graylog Server via operating system packages does not include any special precautions.
 
-* Other precautions outlined in the Graylog documentation
+* Other precautions outlined in the Graylog documentation:
   * create your own unique installation where you understand each component and secure the environment by design
   * Expose only the services that are needed and secure them whenever possible with TLS/SSL and some kind of authentication
   * Graylog appliances are configured as to MongoDB and Elasticsearch is listening on the external interface, do not do this on production network
