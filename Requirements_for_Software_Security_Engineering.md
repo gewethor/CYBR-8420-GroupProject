@@ -101,6 +101,8 @@ Log management applications such as Graylog, require that they remain secure in 
 #### Graylog Installation and Configuration Security Issues  
 * There are several documented methods available to install Graylog server in a production environment. The Graylog documentation provides installation instructions and security precautions including security hardening configurational changes that should be made if deploying to a production environment. Graylog can be installed by the following: Virtual Machine Appliances, operating system packages, Docker, Amazon Web Services, and manual setup.
 
+* Graylog warns that the Graylog Open Virtual Appliance (OVA) is not recommended for operational environments without significant modification to the security posture. The following are recommendations and precautions provided by Graylog’s documented installation instruction.
+
 * When installing via the OVA virtualized appliance, which is not for operational use:
 
 * The default password is ubuntu/ubuntu for the appliance and must be changed
