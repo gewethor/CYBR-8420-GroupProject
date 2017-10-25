@@ -99,21 +99,26 @@ Log management applications such as Graylog, require that they remain secure in 
 
 
 #### Graylog Installation and Configuration Security Issues  
-* There are several documented methods available to install Graylog server in a production environment. The Graylog documentation provides installation instructions and security precautions including security hardening configurational changes that should be made if deploying to a production environment. Graylog can be installed by the following: Virtual Machine Appliances, operating system packages, Docker, Amazon Web Services, and manual setup.
+There are several documented methods available to install Graylog server in a production environment. The Graylog documentation provides installation instructions and security precautions including security hardening configurational changes that should be made if deploying to a production environment. Graylog can be installed by the following: Virtual Machine Appliances, operating system packages, Docker, Amazon Web Services, and manual setup.
 
-* Graylog warns that the Graylog Open Virtual Appliance (OVA) is not recommended for operational environments without significant modification to the security posture. The following are recommendations and precautions provided by Graylog’s documented installation instruction.
+#####Graylog warns that the Graylog Open Virtual Appliance (OVA) is not recommended for operational environments without significant modification to the security posture. The following are recommendations and precautions provided by Graylog’s documented installation instruction.
 
-* When installing via the OVA virtualized appliance, which is not for operational use:
+..*Change the Graylog OVA password from the default password of ubuntu/ubuntu.
+ 
+..*Change the Graylog web interface password from the default password of admin/admin.
+ 
+..*Disable all remote password logins in /etc/ssh/sshd_config and deploy proper SSH keys.
+ 
+..* Isolated the Graylog host network from external access prevent Elasticsearch and MongoDB from being reachable by anyone on the outside.
+ 
+..* Ensure that adequate additional RAM is allocated to the OVA to raise the java heap space.
+ 
+..* Ensure that the graylog-ctl local-connect only the web interface is reachable from the outside.
 
-* The default password is ubuntu/ubuntu for the appliance and must be changed
-
-* The default password for the web interface is admin/admin and must be changed
-
-* Must disable remote password logins in /etc/ssh/sshd_config and deploy proper ssh keys
-
-* Separate the box network-wise from the outside, otherwise Elasticsearch and MongoDB can be reached by anyone
-
-* Add additional RAM to the appliance and raise the java heap!
-
-* With graylog-ctl local-connect only the web interface is reachable from the outside.
-
+Graylog documented installation instructions of Graylog Server via operating system packages does not include any special precautions.
+* Other precautions outlined in the Graylog documentation
+..* create your own unique installation where you understand each component and secure the environment by design
+..* Expose only the services that are needed and secure them whenever possible with TLS/SSL and some kind of authentication
+..* Graylog appliances are configured as to MongoDB and Elasticsearch is listening on the external interface, do not do this on production network
+..* When using Amazon Web Services and our pre-configured AMI, never open all ports in the security group. Do not expose the server to the internet. Access Graylog only from within your VPC. Enable encryption for the communication.
+..* Configure the trusted proxies setting in the Graylog configuration file to prevent against spoofing.
