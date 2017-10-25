@@ -4,46 +4,46 @@
 
 ##### User Authorization
 * **Top Claim**: Graylog prevents unauthorized modifications
-* Graylog has a permission system based on roles which secures the access to its features
-* Graylog allows for session timeout configuration.
-* Customized permission levels and new Graylog roles can be created based on the level of authorization needed.
-* Users with admin rights are unable to edit reader and admin roles.
+* Graylog acceptably secures the access to its features with a various user roles
+* Graylog allows for session timeout configuration
+* Users only receive the level of authorization needed
+* Users with admin rights are unable to edit reader and admin roles
 
 ##### Authentication
-* **Top Claim**: GrayLog has acceptably reduced the risk of the authentication of unauthorized users.
-* GrayLog mitigates malicious users bypassing LDAP authentication starting verision 0.92.
+* **Top Claim**: Graylog has acceptably reduced the risk of improper authentication
+* GrayLog mitigates malicious users bypassing LDAP authentication starting in verision 0.92
 * Graylog requires the use HTTPS 
-* GrayLog LDAP authentication requires complex password 
-* GrayLog has been updated to it latest and most current version 
-* Graylog LDAP Group is set up properly
+* GrayLog LDAP authentication requires complex passwords 
+* GrayLog has been updated to the latest and most current update 
+* LDAP Groups are securely configured
 * The user has admin permission and change the default password  
-* Graylog User using LDAP authentication must be mapped in the LPDA group. 
-* The user has setup other authentication provider such as API tokens.
+* LDAP authentication is acceptably secure by LPDA group mapping
+* The user has setup other authentication provider such as API tokens
 
 ##### Audit Logs
 * **Top Claim**: Graylog audit log plugin sufficiently protects the integrity of the Graylog server from unauthorized alteration  
-* Graylog utilizes audit log plugin to ensure adequate configuration tracking
-* Graylog employs  documentation for  configuration setup to ensure users correctly deploy audit log plugin 
+* Graylog has adequate configuration tracking
+* Graylog employs documentation for configuration setup to ensure users correctly deploy audit log plugin 
 * Graylog's audit log plugin is built to support adequate advanced search functionality
 * Graylog's audit Log plugin is built rigorously to PCI-DSS to ensure acceptable integrity 
 * Graylog stores audit logs in mongoDB file system to ensure it is suitably protected 
 * Graylog's documentation includes instructions for database setup to reduce the risk of improper installation 
 * Graylog's audit log plugin supports free-text input as specific fields to provide a acceptable degree of fidelity
-* MongoDB’s implementation default use of AES-256 for audit log plugin ensures acceptable integrity 
+* Graylog has encryption for audit log plugin 
 * AES-256 provides acceptable integrty
 
 ##### Encryption
 * **Top Claim**: Graylog acceptably secures log data
 * The system is using encryption at the file system level
-* Security analysts configure the disk encryption subsystem
+* Disk encryption systems are securly configured
 * The system logs all API requests
 * The system log includes user name, remote address, and user agent
 * The system can read the IP address from a supplied X-Forwarded-For HTTP header request
 
 ##### Access Tokens
 * **Top Claim**: The Graylog REST API prevents unauthorized execution 
-* All connections will require the use of HTTPS
-* Access tokens will adequately secure the REST API 
+* All server conections are encrypted
+* Access tokens adequately secure the REST API 
 * The signing key is adequately protected
 * Access tokens can be invalidated
 * Access tokens expire after a specified amount of time
