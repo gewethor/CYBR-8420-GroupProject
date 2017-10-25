@@ -2,7 +2,54 @@
 
 #### Graylog Assurance Claims
 
-*list of assurance claims here*
+##### User Authorization
+* **Top Claim**: Graylog prevents unauthorized modifications
+* Graylog has a permission system based on roles which secures the access to its features
+* Graylog allows for session timeout configuration.
+* Customized permission levels and new Graylog roles can be created based on the level of authorization needed.
+* Users with admin rights are unable to edit reader and admin roles.
+
+##### Authentication
+* **Top Claim**: GrayLog has acceptably reduced the risk of the authentication of unauthorized users.
+* GrayLog mitigates malicious users bypassing LDAP authentication starting verision 0.92.
+* Graylog requires the use HTTPS 
+* GrayLog LDAP authentication requires complex password 
+* GrayLog has been updated to it latest and most current version 
+* Graylog LDAP Group is set up properly
+* The user has admin permission and change the default password  
+* Graylog User using LDAP authentication must be mapped in the LPDA group. 
+* The user has setup other authentication provider such as API tokens.
+
+##### Audit Logs
+* **Top Claim**: Graylog audit log plugin sufficiently protects the integrity of the Graylog server from unauthorized alteration  
+* Graylog utilizes audit log plugin to ensure adequate configuration tracking
+* Graylog employs  documentation for  configuration setup to ensure users correctly deploy audit log plugin 
+* Graylog's audit log plugin is built to support adequate advanced search functionality
+* Graylog's audit Log plugin is built rigorously to PCI-DSS to ensure acceptable integrity 
+* Graylog stores audit logs in mongoDB file system to ensure it is suitably protected 
+* Graylog's documentation includes instructions for database setup to reduce the risk of improper installation 
+* Graylog's audit log plugin supports free-text input as specific fields to provide a acceptable degree of fidelity
+* MongoDB’s implementation default use of AES-256 for audit log plugin ensures acceptable integrity 
+* AES-256 provides acceptable integrty
+
+##### Encryption
+* **Top Claim**: Graylog acceptably secures log data
+* The system is using encryption at the file system level
+* Security analysts configure the disk encryption subsystem
+* The system logs all API requests
+* The system log includes user name, remote address, and user agent
+* The system can read the IP address from a supplied X-Forwarded-For HTTP header request
+
+##### Access Tokens
+* **Top Claim**: The Graylog REST API prevents unauthorized execution 
+* All connections will require the use of HTTPS
+* Access tokens will adequately secure the REST API 
+* The signing key is adequately protected
+* Access tokens can be invalidated
+* Access tokens expire after a specified amount of time
+* Access tokens are implemented according to industry best practices
+* Security test contains no warnings
+* The access test is executed properly
 
 
 #### Graylog Security Requirements
@@ -52,26 +99,19 @@ Log management applications such as Graylog, require that they remain secure in 
 
 
 #### Graylog Installation and Configuration Security Issues  
-Graylog Installation and Configuration Security Issues
-There are several documented methods available to install Graylog server in a production environment. The Graylog documentation provides installation instructions and security precautions including security hardening configurational changes that should be made if deploying to a production environment. Graylog can be installed by the following: Virtual Machine Appliances, operating system packages, Docker, Amazon Web Services, and manual setup.
-* Graylog warns that the Graylog Open Virtual Appliance (OVA) is not recommended for operational environments without significant modification to the security posture. The following are recommendations and precautions provided by Graylog’s documented installation instruction.
-**Change the Graylog OVA password from the default password of ubuntu/ubuntu.
- 
-·         Change the Graylog web interface password from the default password of admin/admin.
- 
-·         Disable all remote password logins in /etc/ssh/sshd_config and deploy proper SSH keys.
- 
-·         Isolated the Graylog host network from external access prevent Elasticsearch and MongoDB from being reachable by anyone on the outside.
- 
-·         Ensure that adequate additional RAM is allocated to the OVA to raise the java heap space.
- 
-·         Ensure that the graylog-ctl local-connect only the web interface is reachable from the outside.
+* There are several different documented methods available to install Graylog server. The Graylog documentation provides installation instructions including security hardening configurational changes that should be made if deploying to an operational environment. Graylog can be installed by the following: prebuilt Virtual Machine Appliances, operating System packages, Docker, Amazon Web Services, and manual setup.  
 
-•    Graylog documented installation instructions of Graylog Server via operating system packages does not include any special precautions.
-·         Other precautions outlined in the Graylog documentation
-o    create your own unique installation where you understand each component and secure the environment by design
-o    Expose only the services that are needed and secure them whenever possible with TLS/SSL and some kind of authentication
-o    Graylog appliances are configured as to MongoDB and Elasticsearch is listening on the external interface, do not do this on production network
-o    When using Amazon Web Services and our pre-configured AMI, never open all ports in the security group. Do not expose the server to the internet. Access Graylog only from within your VPC. Enable encryption for the communication.
-o    Configure the trusted proxies setting in the Graylog configuration file to prevent against spoofing.
+* When installing via the OVA virtualized appliance, which is not for operational use:
+
+* The default password is ubuntu/ubuntu for the appliance and must be changed
+
+* The default password for the web interface is admin/admin and must be changed
+
+* Must disable remote password logins in /etc/ssh/sshd_config and deploy proper ssh keys
+
+* Separate the box network-wise from the outside, otherwise Elasticsearch and MongoDB can be reached by anyone
+
+* Add additional RAM to the appliance and raise the java heap!
+
+* With graylog-ctl local-connect only the web interface is reachable from the outside.
 
