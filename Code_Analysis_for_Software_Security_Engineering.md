@@ -19,6 +19,7 @@ The review strategy that we opted to go with is a Risk-based approach.
 * MORE HERE
 
 **Automated Scan Results**
+
 | Code Type | Analysis Tool | Critical | High | Medium | Low |
 | --- | --- | --- | --- | --- | --- |
 | JavaScript | DeepScan | X | X | X | X |
