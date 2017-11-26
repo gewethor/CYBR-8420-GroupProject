@@ -17,13 +17,19 @@ The review strategy that we opted to go with is a Risk-based approach.
 * AttackFlow: https://drive.google.com/file/d/1ISsZNzKGJOf6izpHfTQ-uMVGaRuMXoie/view?usp=sharing
 * Visual Code Grepper: https://drive.google.com/file/d/17ZO648K4noEs576cyyJArC3DZozaT1nv/view?usp=sharing
 * MORE HERE
-  
+
+**Automated Scan Results**
+| Code Type | Analysis Tool | Critical | High | Medium | Low |
+| --- | --- | --- | --- | --- | --- |
+| JavaScript | DeepScan | X | X | X | X |
+| JavaScript | XXX | X | X | X | X |
+| Java | AttackFlow | X | X | X | X |
+| Java | Visual Code Grepper | X | X | X | X |
+| Java | XXX | X | X | X | X |
+
 ### Summary of Key Findings
 
-| Command | Description |
-| --- | --- |
-| git status | List all new or modified files |
-| git diff | Show file differences that haven't been staged |
+
 
 
 
