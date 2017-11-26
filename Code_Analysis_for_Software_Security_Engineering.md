@@ -20,7 +20,10 @@ The review strategy that we opted to go with is a Risk-based approach.
   
 ### Summary of Key Findings
 
-
+| Command | Description |
+| --- | --- |
+| git status | List all new or modified files |
+| git diff | Show file differences that haven't been staged |
 
 
 
