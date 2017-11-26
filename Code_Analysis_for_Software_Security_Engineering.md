@@ -14,7 +14,7 @@ The review strategy that we opted to go with is a Risk-based approach.
   https://deepscan.io/dashboard/#view=project&pid=1237&bid=3218&subview=overview
   
   Java Analysis using AttackFlow
-  https://drive.google.com/open?id=1NU3fFr1cOHEtFlISJy9qapv9qNEIllu_
+  https://drive.google.com/file/d/1NU3fFr1cOHEtFlISJy9qapv9qNEIllu_/view?usp=sharing
   
   
 ### Summary of key findings
