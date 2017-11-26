@@ -8,7 +8,6 @@ The review strategy that we opted to go with is a Risk-based approach.
   * Fadila & Will
   
 ### Automated Code Scanning
-  * Research and Run couple automated tools - Gabi & Joe 
   
   JavaScript Analysis using DeepScan:
   https://deepscan.io/dashboard/#view=project&pid=1237&bid=3218&subview=overview
@@ -21,5 +20,9 @@ The review strategy that we opted to go with is a Risk-based approach.
   
   
 ### Summary of key findings
-  * Consolidate Manual anf Manua
+
+
+
+
+
 ### Links to any pull requests
