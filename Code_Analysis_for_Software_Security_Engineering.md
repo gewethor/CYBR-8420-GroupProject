@@ -22,7 +22,7 @@ The review strategy that we opted to go with is a Risk-based approach.
 
 | Code Type | Analysis Tool | Critical | High | Medium | Low |
 | --- | --- | --- | --- | --- | --- |
-| JavaScript | DeepScan | X | X | X | X |
+| JavaScript | DeepScan | 0 | 2 | 21 | 158 |
 | JavaScript | XXX | X | X | X | X |
 | Java | AttackFlow | X | X | X | X |
 | Java | Visual Code Grepper | X | X | X | X |
