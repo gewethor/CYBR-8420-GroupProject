@@ -32,30 +32,30 @@ The review strategy that we opted to go with is a Risk-based approach.
 
 **Key Findings in Automated Java Code Analysis**
 
-High - Use of Dangerous Regular Expressions  
+* High - Use of Dangerous Regular Expressions  
 CWE-185: Incorrect Regular Expression  
 CPAEC-492: Regular Expression Exponential Blowup  
 Complex Regular expression patterns can result in denial of service attacks.
 
-High - Insecure Random Number Generator
+* High - Insecure Random Number Generator
 CWE-338: Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)
 Random number generator produces predictable values for any given seed which are easily reproducible once the starting seed is identified.
 
-High - Hardcoded Password
+* High - Hardcoded Password
 CWE-259: Use of Hard-coded Password
 CWE-798: Use of Hard-coded Credentials
 CWE-321: Use of Hard-coded Cryptographic Key
 The code may contain a hard-coded password which an attacker could obtain from the source or by dis-assembling the executable.
 
-Medium - Synchronized Code - Possible Performance Impact		
+* Medium - Synchronized Code - Possible Performance Impact		
 CWE-667: Improper Locking
 Synchronized code block should not unnecessarily lock shared resources which can result in performance impacts.
 
-Medium - Failure To Release Resources In All Cases
+* Medium - Failure To Release Resources In All Cases
 CWE-401: Improper Release of Memory Before Removing Last Reference ('Memory Leak')
 Failure to release resources can result in a denial of service due to excessive resource consumption.
 
-Medium - Class Implements Public 'clone' Method
+* Medium - Class Implements Public 'clone' Method
 CWE-491: Public cloneable() Method Without Final ('Object Hijack')
 Cloning allows an attacker to instantiate a class without running any of the class constructors by deploying hostile code in the JVM.
 
