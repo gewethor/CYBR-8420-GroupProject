@@ -10,9 +10,10 @@ The review strategy that we opted to go with is a Risk-based approach.
 ### Automated Code Scanning
   * Research and Run couple automated tools - Gabi & Joe 
   
-  Javascript Analysis using DeepScan
+  JavaScript Analysis using DeepScan
   https://deepscan.io/dashboard/#view=project&pid=1237&bid=3218&subview=overview
   
+  Java Analysis using AttackFlow
   
   
 ### Summary of key findings
