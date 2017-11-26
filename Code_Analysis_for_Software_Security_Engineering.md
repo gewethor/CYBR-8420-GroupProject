@@ -31,13 +31,9 @@ The review strategy that we opted to go with is a Risk-based approach.
 ### Summary of Key Findings
 
 **Key Findings in Automated Java Code Analysis**
-
 High - Use of Dangerous Regular Expressions
-
 CWE-185: Incorrect Regular Expression
-
 CPAEC-492: Regular Expression Exponential Blowup
-
 Complex Regular expression patterns can result in denial of service attacks.
 
 High - Insecure Random Number Generator
