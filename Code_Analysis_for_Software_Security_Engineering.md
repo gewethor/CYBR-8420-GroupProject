@@ -85,7 +85,7 @@ The software contains dead code, which can never be executed
 CWE-476: NULL Pointer Dereference  
 A NULL pointer dereference occurs when the application dereferences a pointer that it expects to be valid, but is NULL, typically causing a crash or exit.
 
-* Medium - Bad Type Coercion  	
+* Medium - Bad Type Coercion  
 CWE-843: Access of Resource Using Incompatible Type ('Type Confusion')  
 The program allocates or initializes a resource such as a pointer, object, or variable using one type, but it later accesses that resource using a type that is incompatible with the original type.
 
