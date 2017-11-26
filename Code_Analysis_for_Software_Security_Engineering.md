@@ -14,7 +14,7 @@ The review strategy that we opted to go with is a Risk-based approach.
   https://deepscan.io/dashboard/#view=project&pid=1237&bid=3218&subview=overview
   
   Java Analysis using AttackFlow
-  
+  https://github.com/gewethor/CYBR-8420-GroupProject/blob/master/AttackFlow%20Analysis.html
   
 ### Summary of key findings
   * Consolidate Manual anf Manual
