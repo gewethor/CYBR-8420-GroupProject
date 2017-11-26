@@ -9,15 +9,14 @@ The review strategy that we opted to go with is a Risk-based approach.
   
 ### Automated Code Scanning
   
-  JavaScript Analysis using DeepScan:
-  https://deepscan.io/dashboard/#view=project&pid=1237&bid=3218&subview=overview
-  
-  Java Analysis using AttackFlow:
-  https://drive.google.com/file/d/1ISsZNzKGJOf6izpHfTQ-uMVGaRuMXoie/view?usp=sharing
-  
-  Java Analysis using Visual Code Grepper:
-  https://drive.google.com/file/d/17ZO648K4noEs576cyyJArC3DZozaT1nv/view?usp=sharing
-  
+**JavaScript Code Analysis**
+* DeepScan: https://deepscan.io/dashboard/#view=project&pid=1237&bid=3218&subview=overview
+* MORE HERE
+
+**Java Code Analysis**
+* AttackFlow: https://drive.google.com/file/d/1ISsZNzKGJOf6izpHfTQ-uMVGaRuMXoie/view?usp=sharing
+* Visual Code Grepper: https://drive.google.com/file/d/17ZO648K4noEs576cyyJArC3DZozaT1nv/view?usp=sharing
+* MORE HERE
   
 ### Summary of key findings
 
