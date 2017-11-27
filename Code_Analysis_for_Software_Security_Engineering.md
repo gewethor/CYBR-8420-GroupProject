@@ -8,7 +8,7 @@ Model code review of a large-scale project requires concise analysis of many tho
  
 To develop the threat model top threats, all 42 of the threats identified by the Microsoft threat modeling tool were imported into a spreadsheet and grouped together in accordance with their respective interactions. This list was then mapped to Common Weakness Enumeration IDs (CWE) and CAPEC-IDs for ranking analysis. Threats were ranked from low to high based on several factors including: interactions with threat boundaries, rate of occurrence, and potential for exploitation. 
 
-![alt text](https://github.com/gewethor/CYBR-8420-GroupProject/graylog threat modeling.JPG "Threat Modeling Spreadsheet")
+![alt text](https://github.com/gewethor/CYBR-8420-GroupProject/blob/master/graylog%20threat%20modeling.JPG "Threat Modeling Spreadsheet")
 
   * Misuses cases top level issues - Fadila
 
