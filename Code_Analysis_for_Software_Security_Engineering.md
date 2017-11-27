@@ -2,6 +2,9 @@
 The review strategy that we opted to go with is a Risk-based approach.
   * Strategy Summary - Gabi  
   * Threat model top level issues - Will
+    Model code review of a large-scale project requires concise analysis of many thousands or more of lines of code. To narrow down and thus reduce the overall effort of the manual code review, The Ghostbusters developed a couple methods to come up with top level issues to look for. The first method utilizes the Threat model developed in the Microsoft Treat Modeling Tool. The second utilizes the Misuse case diagrams the Ghostbusters developed in an earlier task. 
+    To develop the threat model top threats, all 42 of the threats identified by the Microsoft threat modeling tool were imported into a spreadsheet and grouped together in accordance with their respective interactions. This list was then mapped to Common Weakness Enumeration IDs (CWE) and CAPEC-IDs for ranking analysis. Threats were ranked from low to high based on several factors including: interactions with threat boundaries, rate of occurrence, and potential for exploitation. 
+
   * Misuses cases top level issues - Fadila
 
 ### Manual Code Review
