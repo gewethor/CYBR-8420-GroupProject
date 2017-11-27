@@ -11,6 +11,8 @@ To develop the threat model top threats, all 42 of the threats identified by the
 ![alt text](https://github.com/gewethor/CYBR-8420-GroupProject/blob/master/graylog%20threat%20modeling.JPG "Threat Modeling Spreadsheet")
 
   * Misuses cases top level issues - Fadila
+  
+To develop the Misuse cases top threats, each of the five major security function cases were scrubbed for threats. Once complete, each threat was compiled into a list for comparison with the threats identified by the Microsoft Threat Modeling Tool for new threats and duplicates. It was determined that there were no significant differences between the two and that the more comprehensive list from the threat modeling tool would be used as the principal data set for manual code analysis. 
 
 ### Manual Code Review
   * Fadila & Will
