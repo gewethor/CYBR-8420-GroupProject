@@ -33,10 +33,10 @@ To develop the Misuse cases top threats, each of the five major security functio
 | Code Type | Analysis Tool | Critical | High | Medium | Low |
 | --- | --- | --- | --- | --- | --- |
 | JavaScript | DeepScan | 0 | 2 | 21 | 158 |
-| JavaScript | Find Security Bugs | X | 4 | 79 | X |
+| Javascript | Retire | 0 | 0 | 49 | 1 |
+| Java | Find Security Bugs | 0 | 4 | 79 | 0 |
 | Java | AttackFlow | 0 | 54 | 1 | 264 |
-| Java | Visual Code Grepper | 0 | 2 | 16 | 2382 |
-| Java | Retire | X | X | X | X |
+| Java | Visual Code Grepper | 0 | 2 | 16 | 2382 | 
 
 ### Summary of Key Findings
 
@@ -106,6 +106,12 @@ A NULL pointer dereference occurs when the application dereferences a pointer th
 * Medium - Bad Type Coercion  
 CWE-843: Access of Resource Using Incompatible Type ('Type Confusion')  
 The program allocates or initializes a resource such as a pointer, object, or variable using one type, but it later accesses that resource using a type that is incompatible with the original type.
+
+* Medium - 3rd Party CORS Request May Execute
+CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
+The software does not neutralize or incorrectly neutralizes user-controllable input before it is placed in output that is used as a web page that is served to other users.
+
+
 
 ### Key Findings in Manual code Review
    
