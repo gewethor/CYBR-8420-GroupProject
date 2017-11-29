@@ -57,6 +57,14 @@ CWE-798: Use of Hard-coded Credentials
 CWE-321: Use of Hard-coded Cryptographic Key  
 The code may contain a hard-coded password which an attacker could obtain from the source or by dis-assembling the executable.
 
+* High - Mutable Static Field
+CWE-500: Public Static Field Not Marked Final
+An object contains a public static field that is not marked final, which might allow it to be modified in unexpected ways.
+
+* Medium - Exposing Internal Representation
+CWE-767: Access to Critical Private Variable via Public Method
+The software defines a public method that reads or modifies a private variable.
+
 * Medium - Synchronized Code - Possible Performance Impact  		
 CWE-667: Improper Locking  
 Synchronized code block should not unnecessarily lock shared resources which can result in performance impacts.
@@ -98,6 +106,7 @@ A NULL pointer dereference occurs when the application dereferences a pointer th
 * Medium - Bad Type Coercion  
 CWE-843: Access of Resource Using Incompatible Type ('Type Confusion')  
 The program allocates or initializes a resource such as a pointer, object, or variable using one type, but it later accesses that resource using a type that is incompatible with the original type.
+
 ### Key Findings in Manual code Review
    
    * High related risk with Hard Coded Password
