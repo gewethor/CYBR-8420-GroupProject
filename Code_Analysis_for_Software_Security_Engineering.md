@@ -128,14 +128,14 @@ The software specifies a regular expression in a way that causes data to be impr
    * High - Hard Coded Password
    GrayLog2-server seems to have few hard-coded value that reads “password”.
    I believe these “hard-coded password” are just keys that are used for mapping purpose, however these keys are exposed in clear text and might lead to some backdoor in the future.
-   * Action Taken: Issue Open and Produce Possible Solution
+   Action Taken: Issue Open and Produce Possible Solution
    
    * Medium - Shared Resources Not Locked
-   * Action Taken: Code Fix (To reduce deadlock behaviors and object been reused Use Synchronize blocks instead of Synchronized function )
+   Action Taken: Code Fix (To reduce deadlock behaviors and object been reused Use Synchronize blocks instead of Synchronized function )
        
    * Medium - Resource Not Being Released
      Some Exceptions were not been handle correctly
-   * Action Taken: Code Fix
+   Action Taken: Code Fix
    
 Since you have implemented graylog2-server/src/main/java/org/graylog2/security/AESTools.java for encryption and decryption; I would suggest reading these keys from a property file and utilizing AESTools.decyprt()
 	.ie graylog-enc.properties
