@@ -36,7 +36,7 @@ To develop the Misuse cases top threats, each of the five major security functio
 | JavaScript | Find Security Bugs | X | 4 | 79 | X |
 | Java | AttackFlow | 0 | 54 | 1 | 264 |
 | Java | Visual Code Grepper | 0 | 2 | 16 | 2382 |
-| Java | XXXXXXXX | X | X | X | X |
+| Java | Retire | X | X | X | X |
 
 ### Summary of Key Findings
 
