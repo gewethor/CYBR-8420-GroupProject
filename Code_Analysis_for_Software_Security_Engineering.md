@@ -80,7 +80,7 @@ CWE-628: Function Call with Incorrectly Specified Arguments
 The product calls a function, procedure, or routine with arguments that are not correctly specified, leading to always-incorrect behavior and resultant weaknesses.
 
 * Medium - No Effect Call  
-CWE-XXX TODO  
+CWE-665: Improper Initialization
 This rule applies when the result of built-in API call, which has no side effects, is not used.
 
 * Medium - Uninitialized Local Variable  
