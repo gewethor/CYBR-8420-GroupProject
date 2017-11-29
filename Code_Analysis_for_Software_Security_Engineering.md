@@ -111,8 +111,18 @@ The program allocates or initializes a resource such as a pointer, object, or va
 CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
 The software does not neutralize or incorrectly neutralizes user-controllable input before it is placed in output that is used as a web page that is served to other users.
 
+* Medium - Selector interpreted as HTM
+CWE-80: Improper Neutralization of Script-Related HTML Tags in a Web Page ('Basic XSS')
+The software receives input from an upstream component, but it does not neutralize or incorrectly neutralizes special characters such as "<", ">", "&", "$" that could be interpreted as web-scripting elements when they are sent to a downstream component that processes web pages. 
 
+* Medium - Jquery Exceeding Stack Call Limit (DoS)
+CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')
+The software does not properly restrict the size or amount of resources that are requested or influenced by an actor, which can be used to consume more resources than intended.
 
+* Medium - Regular Expression Which Could Cause a DoS 
+CWE-185: Incorrect Regular Expression
+The software specifies a regular expression in a way that causes data to be improperly matched or compared.
+ 
 ### Key Findings in Manual code Review
    
    * High related risk with Hard Coded Password
