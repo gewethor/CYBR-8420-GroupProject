@@ -33,7 +33,7 @@ To develop the Misuse cases top threats, each of the five major security functio
 | Code Type | Analysis Tool | Critical | High | Medium | Low |
 | --- | --- | --- | --- | --- | --- |
 | JavaScript | DeepScan | 0 | 2 | 21 | 158 |
-| JavaScript | XXXXXXXXX | X | X | X | X |
+| JavaScript | Find Security Bugs | X | 4 | 79 | X |
 | Java | AttackFlow | 0 | 54 | 1 | 264 |
 | Java | Visual Code Grepper | 0 | 2 | 16 | 2382 |
 | Java | XXXXXXXX | X | X | X | X |
