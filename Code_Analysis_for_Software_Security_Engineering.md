@@ -17,23 +17,23 @@ To develop the Misuse cases top threats, each of the five major security functio
 
 **Key Findings in Manual Code Analysis**
 
-   * High - Hard Coded Password for mapping purposes 
+* High - Hard Coded Password for mapping purposes 
 CWE-798 & CWE-259: Hard Coded Passwords
 CAPEC-ID 190 & 167: Reverse Engineering
 GrayLog2-server seems to have few hard-coded value that reads “password”. I believe these “hard-coded password” are just keys that are used for mapping purpose, however these keys are exposed in clear text and might lead to some backdoor in the future. Action Taken: Issue Open and Produce Possible Solution
 
    
-   * Medium – 
+* Medium – 
 CWE-667: Improper Locking
 CAPEC-ID 25: Forced Deadlock
 The software does not properly acquire a lock on a resource, or it does not properly release a lock on a resource, leading to unexpected resource state changes and behaviors.
 Shared Resources Not Locked Action Taken: Code Fix (To reduce deadlock behaviors and object been reused Use Synchronize blocks instead of Synchronized function)
 
        
-   * Medium – 
-   CWE-667: Improper Locking
-   CAPEC-ID 25: Forced Deadlock
-   Resource Not Being Released Some Exceptions were not being handle correctly Action Taken: Code Fix
+* Medium – 
+CWE-667: Improper Locking
+CAPEC-ID 25: Forced Deadlock
+Resource Not Being Released Some Exceptions were not being handle correctly Action Taken: Code Fix
 
    
 Since you have implemented graylog2-server/src/main/java/org/graylog2/security/AESTools.java for encryption and decryption; I would suggest reading these keys from a property file and utilizing AESTools.decyprt()
@@ -67,7 +67,7 @@ enc-key=ENC(your_encrypted_key_with_salt)
 
 * High - Use of Dangerous Regular Expressions  
 CWE-185: Incorrect Regular Expression  
-CPAEC-492: Regular Expression Exponential Blowup  
+CAPEC-492: Regular Expression Exponential Blowup  
 Complex Regular expression patterns can result in denial of service attacks.
 
 * High - Insecure Random Number Generator  
