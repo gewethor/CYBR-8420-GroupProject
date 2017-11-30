@@ -3,13 +3,13 @@
 ### Code Review Strategy 
 Before diving into our code review, we needed to determine a review strategy that best fit the needs of our review and the level of experience of our team. The review strategy that we determined would be most effective is a Risk-based approach. In order to utilize this strategy and create the most optimal approach, we needed to brainstorm as a team to determine our best course of action. Model code review of a large-scale project requires concise analysis of many thousands or more of lines of code. To narrow down and thus reduce the overall effort of the manual code review, The Ghostbusters developed a couple methods to come up with top level issues to look for. The first method utilizes the Threat model developed in the Microsoft Treat Modeling Tool. The second utilizes the Misuse case diagrams the Ghostbusters developed in an earlier task. 
 
-#### Threat model top level issues
+#### Threat Model Top Level Issues
  
 To develop the threat model top threats, all 42 of the threats identified by the Microsoft threat modeling tool were imported into a spreadsheet and grouped together in accordance with their respective interactions. This list was then mapped to Common Weakness Enumeration IDs (CWE) and CAPEC-IDs for ranking analysis. Threats were ranked from low to high based on several factors including: interactions with threat boundaries, rate of occurrence, and potential for exploitation. 
 
 ![alt text](https://github.com/gewethor/CYBR-8420-GroupProject/blob/master/graylog%20threat%20modeling.JPG "Threat Modeling Spreadsheet")
 
-#### Misuses cases top level issues
+#### Misuse Cases Top Level Issues
   
 To develop the Misuse cases top threats, each of the five major security function cases were scrubbed for threats. Once complete, each threat was compiled into a list for comparison with the threats identified by the Microsoft Threat Modeling Tool for new threats and duplicates. It was determined that there were no significant differences between the two and that the more comprehensive list from the threat modeling tool would be used as the principal data set for manual code analysis. 
 
