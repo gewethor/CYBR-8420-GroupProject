@@ -17,10 +17,11 @@ To develop the Misuse cases top threats, each of the five major security functio
 
 **Key Findings in Manual Code Review**
 
-   * High - Hard Coded Password
-   GrayLog2-server seems to have few hard-coded value that reads “password”.
-   I believe these “hard-coded password” are just keys that are used for mapping purpose, however these keys are exposed in clear text and might lead to some backdoor in the future.
-   Action Taken: Issue Open and Produce Possible Solution
+   * High - Hard Coded Password for mapping purposes 
+CWE-798 & CWE-259: Hard Coded Passwords
+CAPEC-ID 190 & 167: Reverse Engineering
+GrayLog2-server seems to have few hard-coded value that reads “password”. I believe these “hard-coded password” are just keys that are used for mapping purpose, however these keys are exposed in clear text and might lead to some backdoor in the future. Action Taken: Issue Open and Produce Possible Solution
+
    
    * Medium - Shared Resources Not Locked
    Action Taken: Code Fix (To reduce deadlock behaviors and object been reused Use Synchronize blocks instead of Synchronized function )
