@@ -57,17 +57,17 @@ CWE-798: Use of Hard-coded Credentials
 CWE-321: Use of Hard-coded Cryptographic Key  
 The code may contain a hard-coded password which an attacker could obtain from the source or by dis-assembling the executable.
 
-* High - Mutable Static Field
-CWE-500: Public Static Field Not Marked Final
-An object contains a public static field that is not marked final, which might allow it to be modified in unexpected ways.
+* High - Mutable Static Field  
+CWE-500: Public Static Field Not Marked Final  
+An object contains a public static field that is not marked final, which might allow it to be modified in unexpected ways.  
 
-* Medium - Exposing Internal Representation
-CWE-767: Access to Critical Private Variable via Public Method
-The software defines a public method that reads or modifies a private variable.
+* Medium - Exposing Internal Representation  
+CWE-767: Access to Critical Private Variable via Public Method  
+The software defines a public method that reads or modifies a private variable.  
 
-* Medium - Synchronized Code - Possible Performance Impact  		
+* Medium - Synchronized Code - Possible Performance Impact    		
 CWE-667: Improper Locking  
-Synchronized code block should not unnecessarily lock shared resources which can result in performance impacts.
+Synchronized code block should not unnecessarily lock shared resources which can result in performance impacts.  
 
 * Medium - Failure To Release Resources In All Cases  
 CWE-401: Improper Release of Memory Before Removing Last Reference ('Memory Leak')  
