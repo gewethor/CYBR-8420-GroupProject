@@ -153,4 +153,4 @@ Pull request https://github.com/Graylog2/graylog2-server/pull/4384
 
 Issue opened https://github.com/Graylog2/graylog2-server/issues/4379
 Issue closed with for the following reason:
-	* Having hard-coded dictionary keys in the source to look up the actual password in a map is perfectly fine.
+* Having hard-coded dictionary keys in the source to look up the actual password in a map is perfectly fine.
