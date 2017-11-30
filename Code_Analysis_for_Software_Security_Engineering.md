@@ -15,7 +15,7 @@ To develop the Misuse cases top threats, each of the five major security functio
 
 ### Manual Code Review
 
-**Key Findings in Manual Code Review**
+**Key Findings in Manual Code Analysis**
 
    * High - Hard Coded Password for mapping purposes 
 CWE-798 & CWE-259: Hard Coded Passwords
