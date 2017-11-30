@@ -138,9 +138,6 @@ The software does not properly restrict the size or amount of resources that are
 * Medium - Regular Expression Which Could Cause a DoS  
 CWE-185: Incorrect Regular Expression  
 The software specifies a regular expression in a way that causes data to be improperly matched or compared. 
- 
-### Key Findings in Manual code Review
-   
 
 
 ### Links to any pull requests
