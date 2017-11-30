@@ -24,10 +24,10 @@ GrayLog2-server seems to have few hard-coded value that reads “password”. I 
 
    
    * Medium – 
-   CWE-667: Improper Locking
-   CAPEC-ID 25: Forced Deadlock
-   The software does not properly acquire a lock on a resource, or it does not properly release a lock on a resource, leading to unexpected resource state changes and behaviors.
-   Shared Resources Not Locked Action Taken: Code Fix (To reduce deadlock behaviors and object been reused Use Synchronize blocks instead of Synchronized function)
+CWE-667: Improper Locking
+CAPEC-ID 25: Forced Deadlock
+The software does not properly acquire a lock on a resource, or it does not properly release a lock on a resource, leading to unexpected resource state changes and behaviors.
+Shared Resources Not Locked Action Taken: Code Fix (To reduce deadlock behaviors and object been reused Use Synchronize blocks instead of Synchronized function)
 
        
    * Medium – 
