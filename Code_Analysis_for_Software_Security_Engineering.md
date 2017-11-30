@@ -31,11 +31,8 @@ GrayLog2-server seems to have few hard-coded value that reads “password”. I 
 
        
    * Medium – 
-   
    CWE-667: Improper Locking
-   
    CAPEC-ID 25: Forced Deadlock
-   
    Resource Not Being Released Some Exceptions were not being handle correctly Action Taken: Code Fix
 
    
