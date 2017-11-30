@@ -65,7 +65,7 @@ An object contains a public static field that is not marked final, which might a
 CWE-767: Access to Critical Private Variable via Public Method  
 The software defines a public method that reads or modifies a private variable.  
 
-* Medium - Synchronized Code - Possible Performance Impact    		
+* Medium - Synchronized Code - Possible Performance Impact  	
 CWE-667: Improper Locking  
 Synchronized code block should not unnecessarily lock shared resources which can result in performance impacts.  
 
