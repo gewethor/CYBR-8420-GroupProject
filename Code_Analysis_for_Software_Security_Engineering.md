@@ -30,9 +30,14 @@ GrayLog2-server seems to have few hard-coded value that reads “password”. I 
    Shared Resources Not Locked Action Taken: Code Fix (To reduce deadlock behaviors and object been reused Use Synchronize blocks instead of Synchronized function)
 
        
-   * Medium - Resource Not Being Released
-     Some Exceptions were not been handle correctly
-   Action Taken: Code Fix
+   * Medium – 
+   
+   CWE-667: Improper Locking
+   
+   CAPEC-ID 25: Forced Deadlock
+   
+   Resource Not Being Released Some Exceptions were not being handle correctly Action Taken: Code Fix
+
    
 Since you have implemented graylog2-server/src/main/java/org/graylog2/security/AESTools.java for encryption and decryption; I would suggest reading these keys from a property file and utilizing AESTools.decyprt()
 	.ie graylog-enc.properties
