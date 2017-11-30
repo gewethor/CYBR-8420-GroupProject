@@ -20,7 +20,10 @@ To develop the Misuse cases top threats, each of the five major security functio
 * High - Hard Coded Password for mapping purposes 
 CWE-798 & CWE-259: Hard Coded Passwords
 CAPEC-ID 190 & 167: Reverse Engineering
-GrayLog2-server seems to have few hard-coded value that reads “password”. I believe these “hard-coded password” are just keys that are used for mapping purpose, however these keys are exposed in clear text and might lead to some backdoor in the future. Action Taken: Issue Open and Produce Possible Solution
+GrayLog2-server seems to have few hard-coded value that reads “password”. I believe these “hard-coded password” are just keys that are used for mapping purpose, however these keys are exposed in clear text and might lead to some backdoor in the future. Action Taken: Issue Open and with Possible Solution
+Since GrayLog have implemented graylog2-server/src/main/java/org/graylog2/security/AESTools.java for encryption and decryption; the suggestion is to read these keys from a property file and utilizing AESTools.decyprt()
+	.ie graylog-enc.properties
+		enc-key=ENC(your_encrypted_key_with_salt)
 
    
 * Medium – 
@@ -33,12 +36,8 @@ Shared Resources Not Locked Action Taken: Code Fix (To reduce deadlock behaviors
 * Medium – 
 CWE-667: Improper Locking
 CAPEC-ID 25: Forced Deadlock
-Resource Not Being Released Some Exceptions were not being handle correctly Action Taken: Code Fix
+Resource Not Being Released Some Exceptions were not being handle correctly Action Taken: Code Fix to property use try with resources
 
-   
-Since you have implemented graylog2-server/src/main/java/org/graylog2/security/AESTools.java for encryption and decryption; I would suggest reading these keys from a property file and utilizing AESTools.decyprt()
-	.ie graylog-enc.properties
-enc-key=ENC(your_encrypted_key_with_salt)
   
 ### Automated Code Scanning
   
@@ -148,8 +147,10 @@ The software specifies a regular expression in a way that causes data to be impr
 
 
 ### Links to any pull requests
-  More
+Pull request https://github.com/Graylog2/graylog2-server/pull/4384
 
 ### Links to issue opened
 
 Issue opened https://github.com/Graylog2/graylog2-server/issues/4379
+Issue closed with for the following reason:
+	* Having hard-coded dictionary keys in the source to look up the actual password in a map is perfectly fine.
