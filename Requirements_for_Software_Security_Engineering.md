@@ -4,7 +4,7 @@
 
 ##### User Authorization
 * **Top Claim**: Graylog prevents unauthorized modifications
-* Graylog acceptably secures the access to its features with a various user roles
+* Graylog acceptably secures access with various user roles
 * Graylog allows for session timeout configuration
 * Users only receive the level of authorization needed
 * Users with admin rights are unable to edit reader and admin roles
